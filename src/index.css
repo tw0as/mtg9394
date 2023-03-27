@@ -1,0 +1,10 @@
+body {
+  margin: 3rem;
+  background: linear-gradient(to left, #967259, #38220f);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

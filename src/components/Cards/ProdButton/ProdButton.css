@@ -1,0 +1,16 @@
+.prod-button {
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    background: linear-gradient(to left, #967259, #38220f);
+    transition: all 0.4s;
+}
+
+.prod-button:hover {
+    color: #ece0d1;
+    text-decoration: solid;
+}
