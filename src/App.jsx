@@ -1,15 +1,22 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ProdCard from './components/Cards/ProdCard/ProdCard';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer greeting="Welcome to Old School MTG"/>
-      <ProdCard />
-    </div>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={ <ItemListContainer/> } />
+          <Route path="/category/:idCategory" element={ <ItemListContainer/> } />
+          <Route path="/item/:idItem" element={ <ItemDetailContainer/> }  />
+        </Routes>
+      </BrowserRouter>
+
+    </>
   );
 }
 

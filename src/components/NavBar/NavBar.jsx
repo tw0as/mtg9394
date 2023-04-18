@@ -1,29 +1,17 @@
-import React from 'react';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <header>
-            <h2><a href="#home">Old School MTG</a></h2>
+            <Link to={"/"}>
+                <h2>Arabian Nights</h2>
+            </Link>
             <nav>
-                <a href="#home">About Us</a>
-                <a href="#news">Rules</a>
-                <a href="#news">Decks to Beat</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Singles
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Alpha</a>
-                        <a href="#">Beta</a>
-                        <a href="#">Unlimited</a>
-                        <a href="#">Arabian Nights</a>
-                        <a href="#">Antiquities</a>
-                        <a href="#">Legends</a>
-                        <a href="#">The Dark</a>
-                    </div>
-                </div>
+                <NavLink to={`/Category/white`}>White</NavLink>
+                <NavLink to={`/Category/blue`}>Blue</NavLink>
+                <NavLink to={`/Category/black`}>Black</NavLink>
             </nav>
             <CartWidget/>
         </header>
