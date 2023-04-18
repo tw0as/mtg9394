@@ -1,7 +1,8 @@
 .itemContainer {
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 3rem;
+    background-color: 	#967259
 }
 
 img {
