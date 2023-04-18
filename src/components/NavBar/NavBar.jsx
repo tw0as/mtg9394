@@ -12,6 +12,10 @@ const NavBar = () => {
                 <NavLink to={`/Category/white`}>White</NavLink>
                 <NavLink to={`/Category/blue`}>Blue</NavLink>
                 <NavLink to={`/Category/black`}>Black</NavLink>
+                <NavLink to={`/Category/red`}>Red</NavLink>
+                <NavLink to={`/Category/green`}>Green</NavLink>
+                <NavLink to={`/Category/artifact`}>Artifacts</NavLink>
+                <NavLink to={`/Category/land`}>Lands</NavLink>
             </nav>
             <CartWidget/>
         </header>
